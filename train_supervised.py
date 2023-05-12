@@ -15,6 +15,10 @@ from utils.utils import EarlyStopMonitor, get_neighbor_finder, MLP
 from utils.data_processing import compute_time_statistics, get_data_node_classification
 from evaluation.evaluation import eval_node_classification
 
+# python train_self_supervised.py --prefix tgn-attn --n_runs 10 --data iclr_conf --use_memory
+# python train_self_supervised.py --data iclr_conf --use_memory --memory_updater rnn --embedding_module time --prefix jodie_rnn --n_runs 10
+
+
 random.seed(0)
 np.random.seed(0)
 torch.manual_seed(0)
